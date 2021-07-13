@@ -1,1 +1,23 @@
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
 
+class Test extends React.Component {
+  render() {
+    const a = function () {alert(this.a)}
+    const b = () => {alert(this.a)}
+    try {
+      a()
+    } catch {
+      alert("A에서 문제가 발생했습니다")
+      alert(e)
+    }
+    try {
+      b()
+    } catch {
+      alert("B에서 문제가 발생했습니다")
+      alert(e)
+    }
+    return <h1 style = {{color:this.props.color}}>{this.props.child}</h1>
+  }
+}
+const element =<div><Test color="red">Hello React</Test></div>
