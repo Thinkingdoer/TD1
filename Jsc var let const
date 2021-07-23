@@ -1,0 +1,23 @@
+var name = 'bathingape'
+    console.log(name) // bathingape
+
+    var name = 'javascript'
+    console.log(name) // javascript
+    
+let name = 'bathingape'
+    console.log(name) // bathingape
+
+    let name = 'javascript'
+    console.log(name) 
+    // Uncaught SyntaxError: Identifier 'name' has 
+    
+const name = 'bathingape'
+    console.log(name) // bathingape
+
+    const name = 'javascript'
+    console.log(name) 
+    // Uncaught SyntaxError: Identifier 'name' has already been declared
+
+    name = 'react'
+    console.log(name) 
+    //Uncaught TypeError: Assignment to constant 
